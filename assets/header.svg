@@ -1,59 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Morgan1Stanley">
-  <title>Morgan1Stanley</title>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080d20"/>
-      <stop offset="45%" stop-color="#171f4d"/>
-      <stop offset="100%" stop-color="#062d45"/>
+      <stop offset="0%" stop-color="#070B18"/><stop offset="55%" stop-color="#0D1533"/><stop offset="100%" stop-color="#051C2C"/>
     </linearGradient>
-    <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    <pattern id="gs" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 H0 V30" fill="none" stroke="#7C5CFF" stroke-opacity="0.10"/>
+    </pattern>
+    <pattern id="gl" width="150" height="150" patternUnits="userSpaceOnUse">
+      <path d="M150 0 H0 V150" fill="none" stroke="#22D3EE" stroke-opacity="0.20" stroke-width="1.2"/>
+    </pattern>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.55"/><stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.45"/><stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="50%" cy="50%" r="72%">
+      <stop offset="45%" stop-color="#02040C" stop-opacity="0"/><stop offset="100%" stop-color="#02040C" stop-opacity="0.58"/>
     </radialGradient>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c5cff"/>
-      <stop offset="50%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#7c5cff"/>
+      <stop offset="0%" stop-color="#7C5CFF"/><stop offset="50%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#7C5CFF"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
-
   <rect width="1200" height="340" fill="url(#bg)"/>
-
-  <circle cx="180" cy="70" r="280" fill="url(#blobA)">
-    <animate attributeName="cx" values="180; 320; 180" dur="14s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1010" cy="290" r="320" fill="url(#blobB)">
-    <animate attributeName="cx" values="1010; 860; 1010" dur="17s" repeatCount="indefinite"/>
-  </circle>
-
-  <pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse">
-    <circle cx="2" cy="2" r="1.6" fill="#ffffff" opacity="0.10"/>
-  </pattern>
-
-  <rect width="1200" height="340" fill="url(#dots)"/>
-
-  <g fill="none" stroke="#7c5cff" stroke-opacity="0.35" stroke-width="1.5">
-    <circle cx="1150" cy="30" r="90"/>
-    <circle cx="1150" cy="30" r="140"/>
-  </g>
-  <g fill="none" stroke="#22d3ee" stroke-opacity="0.30" stroke-width="1.5">
-    <circle cx="50" cy="325" r="110"/>
-    <circle cx="50" cy="325" r="160"/>
-  </g>
-
-  <text x="86" y="104" font-family="Consolas, Menlo, monospace" font-size="44" fill="#22d3ee" fill-opacity="0.35">&lt;/&gt;</text>
-  <text x="1052" y="292" font-family="Consolas, Menlo, monospace" font-size="44" fill="#7c5cff" fill-opacity="0.35">{ }</text>
-
+  <rect width="1200" height="340" fill="url(#gs)"/>
+  <rect width="1200" height="340" fill="url(#gl)"/>
+  <circle cx="200" cy="90" r="260" fill="url(#g1)"><animate attributeName="cx" values="200;340;200" dur="15s" repeatCount="indefinite"/></circle>
+  <circle cx="1010" cy="270" r="300" fill="url(#g2)"><animate attributeName="cx" values="1010;870;1010" dur="18s" repeatCount="indefinite"/></circle>
+  <rect width="1200" height="340" fill="url(#vig)"/>
   <g font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
-    <text x="600" y="142" font-size="29" font-weight="600" letter-spacing="10" fill="#b3c4e2">HELLO, I AM</text>
-    <text x="600" y="226" font-size="72" font-weight="700" letter-spacing="1" fill="#ffffff">Morgan1Stanley</text>
-    <text x="600" y="272" font-size="23" font-weight="600" letter-spacing="6" fill="#a5b8d8">GITHUB PROFILE</text>
+    <text x="600" y="142" font-size="29" font-weight="600" letter-spacing="10" fill="#C6D5EE">HELLO, I AM</text>
+    <text x="600" y="226" font-size="72" font-weight="700" letter-spacing="1" fill="#FFFFFF">Morgan1Stanley</text>
+    <text x="600" y="272" font-size="23" font-weight="600" letter-spacing="6" fill="#ACBFDC">GITHUB PROFILE</text>
   </g>
-
   <rect x="390" y="298" width="420" height="7" rx="3.5" fill="url(#accent)"/>
 </svg>
