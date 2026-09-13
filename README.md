@@ -12,6 +12,13 @@
 
 <br />
 
+<!-- ========================= 动态彩蛋：鹈鹕骑自行车（自绘 SVG） ========================= -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Morgan1Stanley/Morgan1Stanley/main/assets/pelican-ride.svg" alt="pelican riding a bicycle" width="100%" />
+</div>
+
+<br />
+
 <!-- ========================= 联系入口（把 href 换成你的真实链接） ========================= -->
 <div align="center">
   <a href="https://github.com/Morgan1Stanley"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Morgan1Stanley-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
