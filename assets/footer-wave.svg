@@ -1,12 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="divider">
-  <title>divider</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="footer">
+  <title>footer</title>
   <defs>
-    <linearGradient id="fw" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c5cff"/>
-      <stop offset="50%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#7c5cff"/>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080D1F"/>
+      <stop offset="55%" stop-color="#0C1433"/>
+      <stop offset="100%" stop-color="#061D2C"/>
+    </linearGradient>
+    <pattern id="pgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0 H0 V26" fill="none" stroke="#7C5CFF" stroke-opacity="0.17"/>
+    </pattern>
+    <pattern id="pgridL" width="130" height="130" patternUnits="userSpaceOnUse">
+      <path d="M130 0 H0 V130" fill="none" stroke="#22D3EE" stroke-opacity="0.22" stroke-width="1.1"/>
+    </pattern>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFF"/>
+      <stop offset="100%" stop-color="#4FE3F5"/>
+    </linearGradient>
+    <linearGradient id="brd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0.95"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
+    <clipPath id="fclip"><rect x="0" y="10" width="1200" height="130" rx="16"/></clipPath>
   </defs>
-  <path d="M0,62 C150,104 300,20 450,48 C600,76 750,10 900,42 C1010,66 1110,38 1200,54 L1200,110 L0,110 Z" fill="url(#fw)"/>
+  <g clip-path="url(#fclip)">
+    <rect x="0" y="10" width="1200" height="130" fill="url(#pg)"/>
+    <rect x="0" y="10" width="1200" height="130" fill="url(#pgrid)"/>
+    <rect x="0" y="10" width="1200" height="130" fill="url(#pgridL)"/>
+    <path d="M0,96 C150,132 300,62 450,84 C600,106 750,54 900,80 C1010,98 1110,74 1200,88 L1200,140 L0,140 Z"
+          fill="url(#wave)" opacity="0.9"/>
+  </g>
+  <rect x="0.6" y="10.6" width="1198.8" height="128.8" rx="16" fill="none" stroke="url(#brd)"/>
 </svg>
