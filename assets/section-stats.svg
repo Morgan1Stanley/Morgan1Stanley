@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="76" viewBox="0 0 1200 76" role="img" aria-label="STATS · 数据面板">
+  <title>STATS · 数据面板</title>
+  <defs>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="16" width="8" height="32" rx="4" fill="url(#tg)"/>
+  <text x="28" y="45" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="700" letter-spacing="2.5" fill="url(#tg)">STATS · 数据面板</text>
+  <rect x="0" y="62" width="1200" height="2" rx="1" fill="url(#rule)"/>
+</svg>
